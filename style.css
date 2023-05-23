@@ -401,3 +401,90 @@ body{
   margin-top:100px;
   display:block;
 }
+
+
+/* STRONA KONTAKTOWA */
+
+.tlo {
+  display: flex;
+  background-color: rgba(133, 133, 133, 1);
+  width: 100%;
+  height: 100vh;
+}
+.kontakt{
+  position: relative;
+  background-color: rgb(39, 39, 39);
+  width: 80vw;
+  height: 85vh;
+  margin: auto;
+  display: flex;
+}
+.ikonki{
+  z-index: 10;
+  margin-left: 5%;
+  width: 45%;
+  height: 95%;
+  padding: 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+.ikonka1{
+  width: 275px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+.ikonka2{
+  width: 275px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ikonka1 h1,.ikonka1 p{
+  margin: 20px 5px;
+  text-align: center;
+}
+.ikonka2 h1,.ikonka2 p{
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.rel_ikonka{
+  width: 100%;
+  height: 35%;
+}
+.box_mapa{
+  text-align:center;
+  align-self: center;
+  right: 5%;
+  position: absolute;
+  width: 55%;
+  height: 90%;
+  background-color: rgb(8, 66, 23);
+}
+.box_mapa h1{
+  font-size: 80px;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 0px;
+}
+
+.mapka{
+  
+  width:550px;
+  height:550px;
+  border:none;
+}
+
+.ikonamail{
+  width:100px;
+  height:100px;
+}
+
+
+
+
