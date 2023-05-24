@@ -191,9 +191,8 @@ body{
 
 .example1 p{
   padding:40px;
-  padding-left:70px;
   padding-top:120px;
-  padding-right:120px;
+  padding-left:70px;
   text-align:justify;
   width:auto;
   height:100%;
@@ -201,9 +200,9 @@ body{
 
 .example1 img{
   object-fit:cover;
+  object-position: 70% 100% ;
   width:100%;
   height:500px;
-  object-fit: cover;
   border-radius:50px;
   position:relative;
   transition:0.3s ease-in-out;
@@ -225,6 +224,7 @@ body{
 
 .tekst_example1{
   width:50%;
+  height:500px;
 }
 
 
@@ -252,6 +252,7 @@ body{
 
 .example2 img{
   object-fit:cover;
+  object-position: 70% 100%;
   width:100%;
   height:500px;
   object-fit: cover;
@@ -302,6 +303,7 @@ body{
 
 .example3 img{
   object-fit:cover;
+  object-position: 70% 100%;
   width:100%;
   height:500px;
   object-fit: cover;
@@ -326,6 +328,7 @@ body{
 
 .tekst_example3{
   width:50%;
+  height:500px;
 }
 
 
@@ -352,6 +355,7 @@ body{
 
 .example4 img{
   object-fit:cover;
+  object-position: 60% 100%;
   width:100%;
   height:500px;
   object-fit: cover;
@@ -379,11 +383,12 @@ body{
 }
 
 .poradniki{
-  background-color:rgb(36, 36, 36);
-  min-height:20vh;
+  background-color:rgb(0, 0, 0);
+  min-height:40vh;
   width:100%;
   text-align:center;
-  display:block;
+  
+
 }
 
 .zawartosc2{
@@ -391,18 +396,16 @@ body{
   min-height:70vh;
   padding:20px;
   margin-top:100px;
-  display:block;
-}
-
-.zawartosc3{
-  font-size:30px;
-  min-height:70vh;
-  padding:20px;
-  margin-top:100px;
-  display:block;
+  
 }
 
 
+
+
+/* STRONA KONTAKTOWA */
+/* STRONA KONTAKTOWA */
+/* STRONA KONTAKTOWA */
+/* STRONA KONTAKTOWA */
 /* STRONA KONTAKTOWA */
 
 .tlo {
@@ -410,6 +413,7 @@ body{
   background-color: rgba(133, 133, 133, 1);
   width: 100%;
   height: 100vh;
+  
 }
 .kontakt{
   position: relative;
@@ -418,6 +422,7 @@ body{
   height: 85vh;
   margin: auto;
   display: flex;
+  border-radius:20px;
 }
 .ikonki{
   z-index: 10;
@@ -432,25 +437,33 @@ body{
   justify-content: center;
   row-gap: 25px;
   column-gap: 25px;
+  color:black;
+  font-size:20px;
+  
 }
 .ikonka1{
   width: 275px;
   height: 300px;
   background-color: rgb(255, 255, 255);
+  border-radius:20px;
 }
 .ikonka2{
-  width: 275px;
+  width: 575px;
   height: 300px;
   background-color: rgb(255, 255, 255);
+  border-radius:20px;
 }
 
 .ikonka1 h1,.ikonka1 p{
   margin: 20px 5px;
   text-align: center;
+  font-size:25px;
 }
 .ikonka2 h1,.ikonka2 p{
   margin: 20px 5px;
   text-align: center;
+  font-size:25px;
+  
 }
 
 .rel_ikonka{
@@ -465,6 +478,7 @@ body{
   width: 55%;
   height: 90%;
   background-color: rgb(8, 66, 23);
+  border-radius:50px;
 }
 .box_mapa h1{
   font-size: 80px;
@@ -474,9 +488,9 @@ body{
 }
 
 .mapka{
-  
-  width:550px;
-  height:550px;
+  border-radius:50px;
+  width:70%;
+  height:70%;
   border:none;
 }
 
@@ -485,6 +499,86 @@ body{
   height:100px;
 }
 
+.ikonatel{
+  padding-top:7px;
+}
+
+.ikonapin{
+  padding-top:10px;
+}
 
 
+/* OFERTA */
+/* OFERTA */
+/* OFERTA */
+/* OFERTA */
+/* OFERTA */
+/* OFERTA */
 
+
+.zawartosc3{
+  padding: 40px 10px;
+  font-size:30px;
+  min-height:70vh;
+  padding:20px;
+  margin-top:100px;
+  
+}
+
+
+  
+.image-gallery {
+	/* telefon */
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+  
+.image-gallery .column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+  
+.image-item img {
+	width: 100%;
+	border-radius: 5px;
+	height: 100%;
+	object-fit: cover;
+}
+/*ustaw obrazki na sobie  */
+@media only screen and (min-width: 768px) {
+	.image-gallery {
+	  flex-direction: row;
+	}
+}
+  
+  /* overlay styles */
+  
+.image-item {
+	position: relative;
+	cursor: pointer;
+}
+  
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(57, 57, 57, 0.5);
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transition: all 0.2s 0.1s ease-in-out;
+	color: #fff;
+	/* center overlay content */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+  
+/* hover */
+
+.image-item:hover .overlay {
+	transform: scale(1);
+}
