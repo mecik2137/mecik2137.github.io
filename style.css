@@ -401,6 +401,7 @@ body{
 
 .videos{
   display:flex;
+  flex-wrap:wrap;
   text-align:center;
   padding:20px;
 }
